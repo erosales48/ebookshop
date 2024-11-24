@@ -17,9 +17,9 @@
 <body>
 <%
     // Database connection details
-    String url = "jdbc:mysql://localhost:3306/shop";
-    String user = "appuser";
-    String password = "password";
+    String url = application.getInitParameter("dbName");
+    String user = application.getInitParameter("dbUser");
+    String password = application.getInitParameter("dbPass");
 
     Connection connection = null;
     Statement statement = null;
@@ -63,5 +63,9 @@
         }
     }
 %>
+<br>
+<br>
+<hr>
+<a href="index.jsp">Back to Home</a>
 </body>
 </html>

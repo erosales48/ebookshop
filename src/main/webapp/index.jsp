@@ -79,5 +79,7 @@
         } // if (shoplist..)
     } // if (booklist..else..)
 %>
+<hr/>
+<a href="index.jsp">Home</a> | <a href="eshop">E-shop</a> | <a href="jdbc.jsp">JDBC Test</a>
 </body>
 </html>

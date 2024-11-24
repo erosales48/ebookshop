@@ -3,4 +3,29 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
+
+        <display-name>conn</display-name>
+        <welcome-file-list>
+            <welcome-file>index.html</welcome-file>
+            <welcome-file>index.htm</welcome-file>
+            <welcome-file>index.jsp</welcome-file>
+            <welcome-file>default.html</welcome-file>
+            <welcome-file>default.htm</welcome-file>
+            <welcome-file>default.jsp</welcome-file>
+        </welcome-file-list>
+
+        <context-param>
+            <param-name>dbName</param-name>
+            <param-value>jdbc:mysql://localhost:3306/shop</param-value>
+        </context-param>
+        <context-param>
+            <param-name>dbUser</param-name>
+            <param-value>appuser</param-value>
+        </context-param>
+        <context-param>
+            <param-name>dbPass</param-name>
+            <param-value>password</param-value>
+        </context-param>
+
+
 </web-app>
